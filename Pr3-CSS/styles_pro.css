@@ -9,7 +9,7 @@ body {
 /* Cabecera */
 .header {
     height: 100px;
-    background: url('cabecera.jpg') no-repeat center center;
+    background: url('cabecera.png') no-repeat center center;
     background-size: cover;
     text-align: center;
 }
@@ -21,7 +21,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #ddd;
+    background-color: #dddddd;
 }
 
 .navbar li {
@@ -68,17 +68,17 @@ table a {
 }
 .sidebar, .sidebar-content {
     width: 185px;
-    border: 1px solid black;
+    border: 1px solid rgba(62, 209, 26, 0.548);
     padding: 10px;
 }
 .sidebar, .enlaces-importantes {
     width: 130px;
-    border: 1px solid black;
+    border: 1px solid rgb(180, 39, 39);
     padding: 10px;
 }
 .footer {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     margin-top: 10px;
     padding: 10px;
 }
