@@ -67,12 +67,12 @@ table a {
     gap: 10px;
 }
 .sidebar, .sidebar-content {
-    width: 150px;
+    width: 185px;
     border: 1px solid black;
     padding: 10px;
 }
 .sidebar, .enlaces-importantes {
-    width: 200px;
+    width: 130px;
     border: 1px solid black;
     padding: 10px;
 }
