@@ -9,11 +9,22 @@ body {
 /* Cabecera */
 .header {
     height: 100px;
-    background: url('https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Pr3-CSS/cabecera.png?raw=true') no-repeat center center;
-    background-size: cover;
     text-align: center;
     position: relative;
-    opacity: 0.3;
+}
+
+/* Pseudo-elemento para la imagen de fondo con opacidad */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Pr3-CSS/cabecera.png?raw=true') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3; /* Aquí se controla la opacidad de la imagen */
+    z-index: -1; /* Asegura que la imagen esté detrás del contenido */
 }
 
 
@@ -60,8 +71,10 @@ a.class2:hover {
 }
 
 a.class2:hover {
-    color: blue;
+    color: blu;
 }
+
+
 
 /* Estructura de las secciones */
 .container {
@@ -80,7 +93,7 @@ a.class2:hover {
 }
 .sidebar, .sidebar-content {
     width: 185px;
-    border: 1px solid rgba(101, 19, 179, 0.548);
+    border: 1px solid rgba(62, 209, 26, 0.548);
     padding: 10px;
 }
 .sidebar, .enlaces-importantes {
