@@ -35,7 +35,7 @@ body {
 
 /* Enlaces */
 a {
-    color: rgb(114, 187, 130);
+    color: rgb(255, 0, 242);
     text-decoration: none;
 }
 
@@ -66,8 +66,13 @@ table a {
     flex-direction: row;
     gap: 10px;
 }
-.sidebar, .enlaces-importantes {
+.sidebar, .sidebar-content {
     width: 150px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.sidebar, .enlaces-importantes {
+    width: 200px;
     border: 1px solid black;
     padding: 10px;
 }
