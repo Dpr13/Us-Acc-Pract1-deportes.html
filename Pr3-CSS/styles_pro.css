@@ -9,10 +9,13 @@ body {
 /* Cabecera */
 .header {
     height: 100px;
-    background: url('cabecera.png') no-repeat center center;
+    background: url('https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Pr3-CSS/cabecera.png?raw=true') no-repeat center center;
     background-size: cover;
     text-align: center;
+    position: relative;
+    opacity: 0.3;
 }
+
 
 /* Menú de navegación */
 .navbar {
@@ -21,7 +24,8 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #dddddd;
+    position: relative;
+    /*background-color: #dddddd;*/
 }
 
 .navbar li {
@@ -35,7 +39,7 @@ body {
 
 /* Enlaces */
 a {
-    color: rgb(255, 0, 242);
+    color: blue;
     text-decoration: none;
 }
 
@@ -47,8 +51,16 @@ a:hover {
     color: red;
 }
 
-table a {
+a.class2 {
     color: green;
+}
+
+a.class2:hover {
+    color: red;
+}
+
+a.class2:hover {
+    color: blue;
 }
 
 /* Estructura de las secciones */
@@ -68,7 +80,7 @@ table a {
 }
 .sidebar, .sidebar-content {
     width: 185px;
-    border: 1px solid rgba(62, 209, 26, 0.548);
+    border: 1px solid rgba(101, 19, 179, 0.548);
     padding: 10px;
 }
 .sidebar, .enlaces-importantes {
