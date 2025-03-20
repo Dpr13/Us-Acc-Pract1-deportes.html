@@ -72,8 +72,8 @@ a.class2:hover {
     color: red;
 }
 
-a.class2:hover {
-    color: blu;
+a.class2:visited {
+    color: blue;
 }
 
 
