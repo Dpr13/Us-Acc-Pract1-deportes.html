@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Página Principal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <div class="container mt-4">
-        <!-- Encabezado principal -->
-        <div class="bg-primary text-white text-center py-3 rounded">
-            <h1>Servicios Deportivos ULL</h1>
-        </div>
-
-        <!-- Sección de servicios y condiciones -->
-        <div class="row mt-4">
-            <div class="col-md-6 border p-3">
-                <h3 class="text-primary">Servicios</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">Elemento 1</li>
-                    <li class="list-group-item">Elemento 2</li>
-                    <li class="list-group-item">Elemento 3</li>
-                    <li class="list-group-item">Elemento 4</li>
-                    <li class="list-group-item">Elemento 5</li>
-                    <li class="list-group-item">Elemento 6</li>
-                    <li class="list-group-item">Elemento 7</li>
-                    <li class="list-group-item">Elemento 8</li>
-                    <li class="list-group-item">Elemento 9</li>
-                    <li class="list-group-item">Elemento 10</li>
-                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Página Principal</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .text-purple {
+                color: #6f42c1 !important; /* Morado */
+            }
+            .bg-purple {
+                background-color: #6f42c1 !important; /* Morado */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <!-- Encabezado principal -->
+            <div class="bg-purple text-white text-center py-3 rounded">
+                <h1>Servicios Deportivos ULL</h1>
             </div>
-            <div class="col-md-6 border p-3">
-                <h3 class="text-primary">Condiciones</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">Elemento 1</li>
-                    <li class="list-group-item">Elemento 2</li>
-                    <li class="list-group-item">Elemento 3</li>
-                    <li class="list-group-item">Elemento 4</li>
-                    <li class="list-group-item">Elemento 5</li>
-                    <li class="list-group-item">Elemento 6</li>
-                    <li class="list-group-item">Elemento 7</li>
-                    <li class="list-group-item">Elemento 8</li>
-                    <li class="list-group-item">Elemento 9</li>
-                    <li class="list-group-item">Elemento 10</li>
-                </ul>
+    
+            <!-- Sección de servicios y condiciones -->
+            <div class="row mt-4">
+                <div class="col-md-6 border p-3">
+                    <h3 class="text-purple">Servicios</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Cancha de Baloncesto</li>
+                        <li class="list-group-item">Cancha de Pádel</li>
+                        <li class="list-group-item">Cancha de Pickeball</li>
+                        <li class="list-group-item">Pista de Volley Playa</li>
+                        <li class="list-group-item">Piscina Olímpica</li>
+                        <li class="list-group-item">Cancha de Fútbol</li>
+                        <li class="list-group-item">Cancha de Tenis</li>
+                        <li class="list-group-item">Cancha de Bádminton</li>
+                        <li class="list-group-item">Pista de Atletismo</li>
+                        <li class="list-group-item">Gimnasio</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 border p-3">
+                    <h3 class="text-purple">Condiciones</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">El uso de las instalaciones requiere reserva previa.</li>
+                        <li class="list-group-item">Es obligatorio el uso de calzado y ropa deportiva adecuada.</li>
+                        <li class="list-group-item">No se permite el consumo de alimentos o bebidas en las canchas.</li>
+                        <li class="list-group-item">El tiempo máximo de uso por reserva es de 1 hora y media.</li>
+                        <li class="list-group-item">Los usuarios deben respetar las normas de convivencia y cuidado de las instalaciones.</li>
+                        <li class="list-group-item">Está prohibido fumar dentro de las instalaciones deportivas.</li>
+                        <li class="list-group-item">El usuaario será responsable de los daños en las instalaciones.</li>
+                        <li class="list-group-item">No se permite el acceso a personas no autorizadas o sin reserva.</li>
+                        <li class="list-group-item">El incumplimiento de las normas puede resultar en la suspensión del acceso.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
         <div id="carouselCanchas" class="carousel slide mt-4" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselCanchas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -108,12 +114,8 @@
                     <label for="nombreReserva" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nombreReserva" placeholder="Ingresa tu nombre">
                 </div>
-                <!-- Imagen de referencia -->
-                <div class="text-center mb-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid rounded shadow-sm" alt="Imagen de referencia">
-                </div>
                 <!-- Aviso de disponibilidad -->
-                <div class="alert alert-warning text-center" role="alert">La cancha de fútbol está inaccesible por obras.</div>
+                <div class="alert alert-warning text-center" role="alert">La cancha de fútbol está inhabilitada por obras.</div>
                 <!-- Barra de progreso -->
                 <div class="mb-3">
                     <label class="form-label">Disponibilidad de Reservas</label>
@@ -125,12 +127,17 @@
                 <div class="mb-3">
                     <label for="seleccionInstalacion" class="form-label">Selecciona la instalación</label>
                     <select class="form-select" id="seleccionInstalacion">
+                        <option>Cancha de Baloncesto</option>
                         <option>Cancha de Pádel</option>
-                        <option>Cancha de pickeball</option>
-                        <option>Piscina</option>
-                        <option>Cancha de baloncesto</option>
-                        <option>Pista de volley playa</option>
+                        <option>Cancha de Pickeball</option>
+                        <option>Pista de Volley Playa</option>
+                        <option>Piscina Olímpica</option>
+                        <option>Cancha de Tenis</option>
+                        <option>Cancha de Bádminton</option>
+                        <option>Pista de Atletismo</option>
+                        <option>Gimnasio</option>
                     </select>
+                </div>
                 </div>
                 <!-- Aceptar condiciones -->
                 <div class="form-check mb-3">
@@ -140,7 +147,7 @@
                 <!-- Mensaje de confirmación (oculto por defecto) -->
                 <div id="mensajeConfirmacion" class="alert alert-success text-center d-none">¡Reserva confirmada con éxito!</div>
                 <!-- Botón de envío -->
-                <button id="botonReservar" class="btn btn-primary btn-lg w-100">Solicitar Reserva</button>
+                <button id="botonReservar" class="btn btn-lg w-100 text-white bg-purple">Solicitar Reserva</button>
             </div>
         </div>
         
