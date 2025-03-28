@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Semanal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e013d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contenedor {
+            background-color: #4b1262;
+            width: 320px;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        .barra-xp {
+            background-color: #f1c40f;
+            height: 15px;
+            border-radius: 10px;
+            width: 85%;
+            margin: 10px auto;
+            position: relative;
+        }
+        .barra-xp span {
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            font-size: 12px;
+            transform: translateX(-50%);
+        }
+        .seccion {
+            background-color: #9856c0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .requisitos {
+            background-color: #a46bb0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .requisitos ul {
+            padding-left: 15px;
+        }
+        .barra-nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #3a0a4a;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .icono {
+            color: white;
+            font-size: 20px;
+        }
+        .imagen-desafio {
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="barra-xp">
+            <span>42069 XP / 50000 XP</span>
+        </div>
+        
+        <div class="seccion">DESAFÍO SEMANAL</div>
+        <p><strong>¡Crea una ALU de 16 bits y Domina las Operaciones Aritméticas!</strong></p>
+        <img src="chip.jpg" alt="Imagen de ALU" class="imagen-desafio">
+        <p>Se busca diseñar una ALU (Unidad Lógica Aritmética) de 16 bits, que sea capaz de realizar las operaciones de suma, resta, multiplicación y división para números enteros y de punto flotante.</p>
+        
+        <div class="seccion">REQUISITOS:</div>
+        <div class="requisitos">
+            <ul>
+                <li><strong>Operaciones:</strong> Suma, resta, multiplicación y división para enteros y punto flotante (IEEE 754, 16 bits).</li>
+                <li><strong>Control:</strong> Señales de control para seleccionar operaciones.</li>
+                <li><strong>Excepciones:</strong> Manejo de división por cero y desbordamientos.</li>
+                <li><strong>Modularidad:</strong> Diseño dividido en módulos lógicos (suma, multiplicación, etc.).</li>
+                <li><strong>Verificación:</strong> Pruebas exhaustivas en múltiples simuladores (ModelSim, Vivado).</li>
+            </ul>
+        </div>
+        
+        <div class="barra-nav">
+            <span class="icono">🏠</span>
+            <span class="icono">📅</span>
+            <span class="icono">🎖</span>
+            <span class="icono">👥</span>
+        </div>
+    </div>
+</body>
+</html>

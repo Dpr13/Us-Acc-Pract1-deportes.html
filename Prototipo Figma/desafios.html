@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafíos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e013d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contenedor {
+            background-color: #4b1262;
+            width: 320px;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        .barra-xp {
+            background-color: #f1c40f;
+            height: 15px;
+            border-radius: 10px;
+            width: 85%;
+            margin: 10px auto;
+            position: relative;
+        }
+        .barra-xp span {
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            font-size: 12px;
+            transform: translateX(-50%);
+        }
+        .seccion {
+            background-color: #9856c0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .desafio {
+            background-color: #a46bb0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .dificultad {
+            font-size: 12px;
+            color: #fff;
+            background-color: #ff5733;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+        .barra-nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #3a0a4a;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .icono {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="barra-xp">
+            <span>42069 XP / 50000 XP</span>
+        </div>
+        
+        <div class="seccion">DESAFÍO DIARIO</div>
+        <p>Dada una cadena de texto, encuentra el palíndromo más largo dentro de la cadena.</p>
+        <p class="dificultad">Dificultad Media</p>
+        
+        <div class="seccion">DESAFÍOS POPULARES</div>
+        <div class="desafio">
+            <span>Celsius - Kelvin</span>
+            <span class="dificultad" style="background-color: green;">Dificultad Baja</span>
+        </div>
+        <div class="desafio">
+            <span>Algoritmo A*</span>
+            <span class="dificultad">Dificultad Alta</span>
+        </div>
+        <div class="desafio">
+            <span>Números Felices</span>
+            <span class="dificultad" style="background-color: orange;">Dificultad Media</span>
+        </div>
+        <div class="desafio">
+            <span>ALU de 16 bits</span>
+            <span class="dificultad">Dificultad Alta</span>
+        </div>
+        
+        <div class="barra-nav">
+            <span class="icono">🏠</span>
+            <span class="icono">📅</span>
+            <span class="icono">🎖</span>
+            <span class="icono">👥</span>
+        </div>
+    </div>
+</body>
+</html>

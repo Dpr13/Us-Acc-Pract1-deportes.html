@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e013d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .perfil-container {
+            background-color: #4b1262;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .perfil-container img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .seccion {
+            background-color: #9856c0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .datos, .estadisticas {
+            text-align: left;
+            font-size: 14px;
+        }
+        .cerrar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="perfil-container">
+        <button class="cerrar">X</button>
+        <img src="avatar.jpg" alt="Avatar">
+        <h2>MI PERFIL</h2>
+        
+        <div class="seccion">Datos personales</div>
+        <div class="datos">
+            <p><strong>Nombre usuario:</strong> LinuxEnjoyer367</p>
+            <p><strong>Correo:</strong> windowshater@gmail.com</p>
+            <p><strong>Contraseña:</strong> **********</p>
+            <p><strong>Alu:</strong> aluXXXXXXXXXX</p>
+            <p><strong>Código de amigo:</strong> CZ23WROA</p>
+        </div>
+        
+        <div class="seccion">Mis estadísticas</div>
+        <div class="estadisticas">
+            <p><strong>Nivel:</strong> 104</p>
+            <p><strong>XP:</strong> 42069</p>
+            <p><strong>Desafíos enviados:</strong> 253</p>
+            <p><strong>Códigos testeados:</strong> 124</p>
+            <p><strong>Envíos fallidos:</strong> 11</p>
+            <p><strong>Envíos exitosos:</strong> 242</p>
+            <p><strong>Envíos exitosos a la primera:</strong> 178</p>
+            <p><strong>Desafíos semanales completados:</strong> 21</p>
+            <p><strong>Desafíos diarios completados:</strong> 96</p>
+        </div>
+    </div>
+</body>
+</html>
