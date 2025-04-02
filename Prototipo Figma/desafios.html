@@ -14,74 +14,103 @@
             height: 100vh;
             margin: 0;
         }
+        .barra-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3a0a4a;
+            padding: 40px 20px;
+            border-radius: 10px;
+            font-size: 24px;
+            height: 90vh;
+            margin-right: 20px;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: white;
+            margin-bottom: 40px;
+        }
+        .icono {
+            width: 40px;
+            height: 40px;
+            margin: 20px 0;
+        }
         .contenedor {
             background-color: #4b1262;
-            width: 320px;
-            padding: 20px;
+            width: 75%;
+            max-width: 1200px;
+            padding: 50px;
             border-radius: 10px;
             color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 90vh;
+            overflow-y: auto;
         }
         .barra-xp {
             background-color: #f1c40f;
-            height: 15px;
+            height: 25px;
             border-radius: 10px;
-            width: 85%;
-            margin: 10px auto;
+            width: 100%;
+            margin: 20px 0;
             position: relative;
         }
         .barra-xp span {
             position: absolute;
             left: 50%;
-            top: -20px;
-            font-size: 12px;
+            top: -30px;
+            font-size: 16px;
             transform: translateX(-50%);
         }
         .seccion {
             background-color: #9856c0;
-            padding: 10px;
+            padding: 20px;
             border-radius: 5px;
-            margin: 10px 0;
+            margin: 30px 0;
             font-weight: bold;
             text-align: center;
+            font-size: 22px;
+            width: 100%;
         }
         .desafio {
             background-color: #a46bb0;
-            padding: 10px;
+            padding: 20px;
             border-radius: 5px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            width: 100%;
         }
         .dificultad {
-            font-size: 12px;
+            font-size: 16px;
             color: #fff;
             background-color: #ff5733;
-            padding: 2px 5px;
+            padding: 8px 12px;
             border-radius: 5px;
-        }
-        .barra-nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #3a0a4a;
-            padding: 10px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .icono {
-            color: white;
-            font-size: 20px;
         }
     </style>
 </head>
 <body>
+    <div class="barra-nav">
+        <div class="avatar"></div>
+        <img class="icono" src="icono-home.png" alt="Inicio">
+        <img class="icono" src="icono-calendario.png" alt="Calendario">
+        <img class="icono" src="icono-medalla.png" alt="Logros">
+        <img class="icono" src="icono-usuarios.png" alt="Usuarios">
+    </div>
     <div class="contenedor">
         <div class="barra-xp">
             <span>42069 XP / 50000 XP</span>
         </div>
         
         <div class="seccion">DESAFÍO DIARIO</div>
-        <p>Dada una cadena de texto, encuentra el palíndromo más largo dentro de la cadena.</p>
+        <p style="font-size: 18px;">Dada una cadena de texto, encuentra el palíndromo más largo dentro de la cadena.</p>
         <p class="dificultad">Dificultad Media</p>
         
         <div class="seccion">DESAFÍOS POPULARES</div>
@@ -100,13 +129,6 @@
         <div class="desafio">
             <span>ALU de 16 bits</span>
             <span class="dificultad">Dificultad Alta</span>
-        </div>
-        
-        <div class="barra-nav">
-            <span class="icono">🏠</span>
-            <span class="icono">📅</span>
-            <span class="icono">🎖</span>
-            <span class="icono">👥</span>
         </div>
     </div>
 </body>
