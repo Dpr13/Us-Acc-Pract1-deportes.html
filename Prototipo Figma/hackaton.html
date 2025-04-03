@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafíos</title>
+    <title>Hackaton 2024</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,7 +66,7 @@
             font-size: 16px;
             transform: translateX(-50%);
         }
-        .seccion {
+        .recompensas, .personalidades {
             background-color: #9856c0;
             padding: 20px;
             border-radius: 5px;
@@ -76,60 +76,57 @@
             font-size: 22px;
             width: 100%;
         }
-        .desafio {
-            background-color: #a46bb0;
-            padding: 20px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-            font-size: 18px;
-            width: 100%;
+        .imagenes-recompensas, .personalidades img {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
         }
-        .dificultad {
-            font-size: 16px;
-            color: #fff;
-            background-color: #ff5733;
-            padding: 8px 12px;
+        .imagenes-recompensas img, .personalidades img {
+            width: 100%;
             border-radius: 5px;
+        }
+        .boton-inscribete {
+            background-color: orange;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="barra-nav">
         <div class="avatar"></div>
-        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-home.png?raw=true" alt="Inicio">
-        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-calendario.png?raw=true" alt="Calendario">
-        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-medalla.png?raw=true" alt="Logros">
-        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-usuarios.png?raw=true" alt="Usuarios">
+        <img class="icono" src="icono-home.png" alt="Inicio">
+        <img class="icono" src="icono-calendario.png" alt="Calendario">
+        <img class="icono" src="icono-medalla.png" alt="Logros">
+        <img class="icono" src="icono-usuarios.png" alt="Usuarios">
     </div>
     <div class="contenedor">
         <div class="barra-xp">
             <span>42069 XP / 50000 XP</span>
         </div>
-        
-        <div class="seccion">DESAFÍO DIARIO</div>
-        <p style="font-size: 18px;">Dada una cadena de texto, encuentra el palíndromo más largo dentro de la cadena.</p>
-        <p class="dificultad">Dificultad Media</p>
-        
-        <div class="seccion">DESAFÍOS POPULARES</div>
-        <div class="desafio">
-            <span>Celsius - Kelvin</span>
-            <span class="dificultad" style="background-color: green;">Dificultad Baja</span>
+        <div class="titulo">HACKATON 2024</div>
+        <p>Únete al torneo más espectacular de todo Benijo participando en el ULL Student Hackaton 2024.</p>
+        <div class="recompensas">Recompensas Únicas</div>
+        <div class="imagenes-recompensas">
+            <img src="pc.jpg" alt="PC Gamer">
+            <img src="cybertruck.jpg" alt="Cybertruck">
+            <img src="trofeo.jpg" alt="Trofeo">
+            <img src="crucero.jpg" alt="Crucero">
+            <img src="avion.jpg" alt="Avión Privado">
+            <img src="dinero.jpg" alt="Dinero">
         </div>
-        <div class="desafio">
-            <span>Algoritmo A*</span>
-            <span class="dificultad">Dificultad Alta</span>
+        <div class="recompensas">Conoce a las grandes personalidades de la ULL</div>
+        <div class="personalidades">
+            <img src="persona1.jpg" alt="Persona 1">
+            <img src="persona2.jpg" alt="Persona 2">
+            <img src="persona3.jpg" alt="Persona 3">
+            <img src="persona4.jpg" alt="Persona 4">
         </div>
-        <div class="desafio">
-            <span>Números Felices</span>
-            <span class="dificultad" style="background-color: orange;">Dificultad Media</span>
-        </div>
-        <div class="desafio">
-            <span>ALU de 16 bits</span>
-            <span class="dificultad">Dificultad Alta</span>
-        </div>
+        <div class="boton-inscribete">🔥 INSCRÍBETE <span style="color: blue;">AHORA</span> 🔥</div>
     </div>
 </body>
 </html>
