@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            font-size: 22;
             background-color: #2e013d;
             display: flex;
             justify-content: center;
@@ -31,7 +32,7 @@
             height: 80px;
             border-radius: 50%;
             margin-bottom: 40px;
-            background-image: url('avatar.jpg');
+            background-image: url('https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/055abc4052112044240037d61a9a317bd6ea7082/Prototipo%20Figma/avatar.jpeg?raw=true');
             background-size: cover;
             background-position: center;
         }
@@ -58,6 +59,7 @@
             height: 25px;
             border-radius: 10px;
             width: 100%;
+            min-width: 200px;  /* Asegura que no colapse */
             margin: 20px 0;
             position: relative;
         }
@@ -86,7 +88,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
-            font-size: 18px;
+            font-size: 22px;
             width: 100%;
         }
         .dificultad {
@@ -95,6 +97,11 @@
             background-color: #ff5733;
             padding: 8px 12px;
             border-radius: 5px;
+        }
+        .progreso {
+            background-color: #f39c12;
+            height: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -108,6 +115,7 @@
     </div>
     <div class="contenedor">
         <div class="barra-xp">
+            <div class="progreso" style="width: 84%;"></div>
             <span>42069 XP / 50000 XP</span>
         </div>
         
