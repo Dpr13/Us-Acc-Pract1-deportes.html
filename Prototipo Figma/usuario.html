@@ -1,87 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de Usuario</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #2e013d;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil de Usuario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      background-color: #2e013d;
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      color: white;
+    }
+
+    .barra-nav {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .perfil-container {
-            background-color: #4b1262;
-            width: 300px;
-            padding: 20px;
+            background-color: #a46bb0;
+            padding: 40px 20px;
             border-radius: 10px;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
-        .perfil-container img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .seccion {
-            background-color: #9856c0;
-            padding: 10px;
-            border-radius: 5px;
-            margin: 10px 0;
-            font-weight: bold;
-        }
-        .datos, .estadisticas {
-            text-align: left;
-            font-size: 14px;
-        }
-        .cerrar {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: white;
-            color: black;
-            border: none;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-    </style>
+            font-size: 24px;
+            height: 90vh;
+            margin-right: 20px;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 40px;
+      background-image: url('https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/055abc4052112044240037d61a9a317bd6ea7082/Prototipo%20Figma/avatar.jpeg?raw=true');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .icono {
+      width: 40px;
+      height: 40px;
+      margin: 20px 0;
+    }
+
+    .contenedor {
+      background-color: #4b1262;
+      flex: 1;
+      padding: 40px;
+      border-radius: 15px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+    }
+
+    .titulo {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .foto-perfil {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-image: url('https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/055abc4052112044240037d61a9a317bd6ea7082/Prototipo%20Figma/avatar.jpeg?raw=true');
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+    }
+
+    .seccion {
+      background-color: #9856c0;
+      padding: 15px 25px;
+      border-radius: 10px;
+      margin: 20px 0 10px;
+      font-size: 24px;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+    }
+
+    .datos, .estadisticas {
+      background-color: #a46bb0;
+      border-radius: 10px;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .fila {
+      margin-bottom: 10px;
+    }
+
+    .fila strong {
+      display: inline-block;
+      width: 250px;
+    }
+  </style>
 </head>
 <body>
-    <div class="perfil-container">
-        <button class="cerrar">X</button>
-        <img src="avatar.jpg" alt="Avatar">
-        <h2>MI PERFIL</h2>
-        
-        <div class="seccion">Datos personales</div>
-        <div class="datos">
-            <p><strong>Nombre usuario:</strong> LinuxEnjoyer367</p>
-            <p><strong>Correo:</strong> windowshater@gmail.com</p>
-            <p><strong>Contraseña:</strong> **********</p>
-            <p><strong>Alu:</strong> aluXXXXXXXXXX</p>
-            <p><strong>Código de amigo:</strong> CZ23WROA</p>
-        </div>
-        
-        <div class="seccion">Mis estadísticas</div>
-        <div class="estadisticas">
-            <p><strong>Nivel:</strong> 104</p>
-            <p><strong>XP:</strong> 42069</p>
-            <p><strong>Desafíos enviados:</strong> 253</p>
-            <p><strong>Códigos testeados:</strong> 124</p>
-            <p><strong>Envíos fallidos:</strong> 11</p>
-            <p><strong>Envíos exitosos:</strong> 242</p>
-            <p><strong>Envíos exitosos a la primera:</strong> 178</p>
-            <p><strong>Desafíos semanales completados:</strong> 21</p>
-            <p><strong>Desafíos diarios completados:</strong> 96</p>
-        </div>
+  <div class="barra-nav">
+    <div class="avatar"></div>
+    <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-home.png?raw=true" alt="Inicio" />
+    <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-calendario.png?raw=true" alt="Calendario" />
+    <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-medalla.png?raw=true" alt="Logros" />
+    <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-usuarios.png?raw=true" alt="Usuarios" />
+  </div>
+
+  <div class="contenedor">
+    <div class="foto-perfil"></div>
+    <div class="titulo">MI PERFIL</div>
+
+    <div class="seccion">Datos personales</div>
+    <div class="datos">
+      <div class="fila"><strong>Nombre usuario:</strong> LinuxEnjoyer367</div>
+      <div class="fila"><strong>Correo:</strong> windowshater@gmail.com</div>
+      <div class="fila"><strong>Contraseña:</strong> ************</div>
+      <div class="fila"><strong>Alu:</strong> aluXXXXXXXXXXX</div>
+      <div class="fila"><strong>Código de amigo:</strong> CZ23WROA</div>
     </div>
+
+    <div class="seccion">Mis estadísticas</div>
+    <div class="estadisticas">
+      <div class="fila"><strong>Nivel:</strong> 104</div>
+      <div class="fila"><strong>XP:</strong> 42069</div>
+      <div class="fila"><strong>Desafíos enviados:</strong> 253</div>
+      <div class="fila"><strong>Códigos testeados:</strong> 124</div>
+      <div class="fila"><strong>Envíos fallidos:</strong> 11</div>
+      <div class="fila"><strong>Envíos exitosos:</strong> 242</div>
+      <div class="fila"><strong>Éxito en el primer intento:</strong> 178</div>
+      <div class="fila"><strong>Desafíos semanales:</strong> 21</div>
+      <div class="fila"><strong>Desafíos diarios:</strong> 96</div>
+    </div>
+  </div>
 </body>
 </html>

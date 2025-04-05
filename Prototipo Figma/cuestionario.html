@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2e013d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+    }
+
+    .contenedor {
+      background-color: #4b1262;
+      width: 80%;
+      max-width: 800px;
+      padding: 40px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+      height: 90vh;
+      position: relative;
+    }
+
+    .barra-xp {
+      background-color: #f1c40f;
+      height: 25px;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .barra-xp .progreso {
+      background-color: #f39c12;
+      height: 100%;
+      border-radius: 10px;
+      width: 84%;
+    }
+
+    .barra-xp span {
+      position: absolute;
+      left: 10px;
+      top: -30px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .foto-perfil {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-image: url('https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/055abc4052112044240037d61a9a317bd6ea7082/Prototipo%20Figma/avatar.jpeg?raw=true');
+      background-size: cover;
+      background-position: center;
+      border: 2px solid white;
+    }
+
+    .titulo {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .pregunta {
+      background-color: #9856c0;
+      padding: 20px;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .pregunta p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .pregunta span.ensamblador {
+      color: #f5ecec;
+      font-weight: bold;
+    }
+
+    .pregunta input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .boton {
+      background-color: #00cc00;
+      color: white;
+      font-size: 22px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .boton:hover {
+      background-color: #00aa00;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="foto-perfil"></div>
+
+
+
+    <div class="titulo">Pero primero responde unas preguntas:</div>
+
+    <div class="pregunta">
+      <p>¿ES ESTE TU PRIMER HACKATON?</p>
+      <input type="text" placeholder="Escribe aquí tu respuesta">
+    </div>
+
+    <div class="pregunta">
+      <p>¿PREFIERES C++ O PYTHON?</p>
+      <input type="text" placeholder="Escribe aquí tu respuesta">
+    </div>
+
+    <div class="pregunta">
+      <p>¿HAS DISFRUTADO ALGUNA VEZ PROGRAMANDO EN <span class="ensamblador">ENSAMBLADOR</span>?</p>
+      <input type="text" placeholder="Escribe aquí tu respuesta">
+    </div>
+
+    <div class="pregunta">
+      <p>¿SUFRES DE ALGÚN TIPO DE ALERGIA?</p>
+      <input type="text" placeholder="Escribe aquí tu respuesta">
+    </div>
+
+    <div class="pregunta">
+      <p>¿QUÉ PORCENTAJE DE TU TIEMPO DEDICAS A HACER PRÁCTICAS?</p>
+      <input type="text" placeholder="Escribe aquí tu respuesta">
+    </div>
+
+    <div class="pregunta">
+        <p>¿TE GUSTARÍA APRENDER UN LENGUAJE NUEVO ESTE AÑO?</p>
+        <input type="text" placeholder="Escribe aquí tu respuesta">
+      </div>
+      
+      <div class="pregunta">
+        <p>¿HAS TRABAJADO EN PROYECTOS COLABORATIVOS ANTES?</p>
+        <input type="text" placeholder="Escribe aquí tu respuesta">
+      </div>
+      
+      <div class="pregunta">
+        <p>¿CUÁL CONSIDERAS TU MAYOR FORTALEZA COMO PROGRAMADOR(A)?</p>
+        <input type="text" placeholder="Escribe aquí tu respuesta">
+      </div>
+      
+      <div class="pregunta">
+        <p>¿QUÉ EDITOR DE CÓDIGO USAS CON MÁS FRECUENCIA?</p>
+        <input type="text" placeholder="Escribe aquí tu respuesta">
+      </div>
+      
+      <div class="pregunta">
+        <p>¿CUÁL HA SIDO TU MAYOR RETO AL APRENDER A PROGRAMAR?</p>
+        <input type="text" placeholder="Escribe aquí tu respuesta">
+      </div>
+
+    <button class="boton">Enviar Respuestas</button>
+  </div>
+</body>
+</html>
+
