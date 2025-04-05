@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafíos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 22;
+            background-color: #2e013d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .barra-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a46bb0;
+            padding: 40px 20px;
+            border-radius: 10px;
+            font-size: 24px;
+            height: 90vh;
+            margin-right: 20px;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            background-image: url('https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/055abc4052112044240037d61a9a317bd6ea7082/Prototipo%20Figma/avatar.jpeg?raw=true');
+            background-size: cover;
+            background-position: center;
+        }
+        .icono {
+            width: 40px;
+            height: 40px;
+            margin: 20px 0;
+        }
+        .contenedor {
+            background-color: #4b1262;
+            width: 75%;
+            max-width: 1200px;
+            padding: 50px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 90vh;
+            overflow-y: auto;
+        }
+        .barra-xp {
+            background-color: #f1c40f;
+            height: 25px;
+            border-radius: 10px;
+            width: 100%;
+            min-width: 200px;  /* Asegura que no colapse */
+            margin: 20px 0;
+            position: relative;
+        }
+        .barra-xp span {
+            position: absolute;
+            left: 50%;
+            top: -30px;
+            font-size: 16px;
+            transform: translateX(-50%);
+        }
+        .seccion {
+            background-color: #9856c0;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+            font-weight: bold;
+            text-align: center;
+            font-size: 22px;
+            width: 100%;
+        }
+        .desafio {
+            background-color: #711f81;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 22px;
+            width: 100%;
+        }
+        .dificultad {
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff5733;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        .progreso {
+            background-color: #f39c12;
+            height: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="barra-nav">
+        <div class="avatar"></div>
+        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-home.png?raw=true" alt="Inicio">
+        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-calendario.png?raw=true" alt="Calendario">
+        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-medalla.png?raw=true" alt="Logros">
+        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-usuarios.png?raw=true" alt="Usuarios">
+    </div>
+    <div class="contenedor">
+        <div class="barra-xp">
+            <div class="progreso" style="width: 84%;"></div>
+            <span>42069 XP / 50000 XP</span>
+        </div>
+        
+        <div class="seccion">DESAFÍO SEMANAL</div>
+            <!-- Tarjeta del Desafío -->
+            <div class="desafio">
+                <div class="semanal">
+        
+                    <!-- Título del desafío -->  
+                    <h3 class="objetivo">¡Crea una ALU de 16 bits <br> y Domina las Operaciones Aritméticas!</h3>
+                    <span class="dificultad" style="background-color: orange;">Dificultad Media</span>
+
+                    <!-- Imagen -->
+                    <br>
+                    <br>
+                    <img src="https://cards.algoreducation.com/_next/image?url=https%3A%2F%2Ffiles.algoreducation.com%2Fproduction-ts%2F__S3__5c117f37-e41f-4d5f-a897-6ba5f15d9a18&w=3840&q=75" alt="Imagen ALU" style="width: 25%"/>
+    
+                    <!-- Descripción -->
+                    <p class="descripcion">
+                        Se busca diseñar una ALU (Unidad Lógica Aritmética) de 16 bits, que sea capaz de realizar las operaciones de suma, resta, multiplicación y división para números enteros y de punto flotante.
+                    </p>
+    
+                    <!-- Requisitos -->
+                    <div>
+                        <h4 class="requisitos">REQUISITOS:</h4>
+                        <ul class="lista requisitos">
+                            <li>Operaciones: Suma, resta, multiplicación y división para enteros y punto flotante (IEEE 754, 16 bits).</li>
+                            <li>Control: Señales de control para seleccionar operaciones.</li>
+                            <li>Excepciones: Manejo de división por cero y desbordamientos.</li>
+                            <li>Modularidad: Diseño dividido en módulos lógicos (suma, multiplicación, etc).</li>
+                            <li>Verificación: Pruebas exhaustivas en múltiples simuladores (ModelSim, Vivado).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
