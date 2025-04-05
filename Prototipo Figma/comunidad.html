@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2e013d;
+            display: flex;
+        }
+
+        .barra-nav {
+            position: sticky;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a46bb0;
+            padding: 40px 20px;
+            border-radius: 10px;
+            font-size: 24px;
+            height: 90vh;
+            margin-right: 20px;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            background-image: url('https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/055abc4052112044240037d61a9a317bd6ea7082/Prototipo%20Figma/avatar.jpeg?raw=true');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .avatar:hover {
+            transform: scale(1.2);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            cursor: pointer;
+        }
+
+        .icono {
+            width: 40px;
+            height: 40px;
+            margin: 20px 0;
+        }
+
+        .icono:hover {
+            transform: scale(1.5);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            cursor: pointer;
+        }
+
+        .contenedor-posts {
+            flex-grow: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+        }
+
+        .post {
+            background-color: #a46bb0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .post:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            cursor: pointer;
+        }
+
+        .post h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .autor {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .autor img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .autor span {
+            font-size: 16px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="barra-nav">
+        <div class="avatar"></div>
+        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-home.png?raw=true" alt="Inicio">
+        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-calendario.png?raw=true" alt="Calendario">
+        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-medalla.png?raw=true" alt="Logros">
+        <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-usuarios.png?raw=true" alt="Usuarios">
+    </div>
+
+    <div class="contenedor-posts">
+        <h1 style="color: white;"><big>COMUNIDAD</big></h1>
+        <div class="posts">
+            <div class="post">
+                <h2>Chavales, no hagan el desafío de ensamblador</h2>
+                <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/ensamblador.jpg?raw=true" alt="Ensamblador">
+                <div class="autor">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/albert.png?raw=true" alt="User Avatar">
+                    <span>Pedro Byte</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2>El desafío semanal es imposible!!!!</h2>
+                <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/desafio.png?raw=true" alt="Código complicado">
+                <div class="autor">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/luis.png?raw=true" alt="User Avatar">
+                    <span>Luis Dev</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2>Deberían eliminar Prolog de la lista de desafíos</h2>
+                <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/Prolog.jpg?raw=true" alt="Prolog">
+                <div class="autor">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/carmen.png?raw=true" alt="User Avatar">
+                    <span>Carmen AI</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2>¿Alguien sabe cómo implementar con árboles?</h2>
+                <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/arboles.png?raw=true" alt="Árboles">
+                <div class="autor">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/martin.jpg?raw=true" alt="User Avatar">
+                    <span>Martin Node</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2>Estoy pensando en pillarme una Raspberry</h2>
+                <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/raspberry.jpg?raw=true" alt="ThinkPad">
+                <div class="autor">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/maria.jpg?raw=true" alt="User Avatar">
+                    <span>Maria Kernel</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2>¡No compilen en viernes!</h2>
+                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd" alt="Compilar">
+                <div class="autor">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/main/Prototipo%20Figma/andres.jpg?raw=true" alt="User Avatar">
+                    <span>Andrés Bug</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
