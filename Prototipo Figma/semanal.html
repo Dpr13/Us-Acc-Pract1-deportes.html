@@ -7,12 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            font-size: 22px;
             background-color: #2e013d;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            display: flex; /* <- Esto es lo importante */
             margin: 0;
+            height: 100vh;
         }
         .barra-nav {
             display: flex;
@@ -52,16 +51,15 @@
         }
         .contenedor {
             background-color: #4b1262;
-            width: 75%;
-            max-width: 1200px;
             padding: 50px;
             border-radius: 10px;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 90vh;
             overflow-y: auto;
+            flex-grow: 1;  /* <- Esto permite que se expanda */
+            height: auto;  /* <- Elimina la altura fija */
         }
         .barra-xp {
             background-color: #f1c40f;
@@ -102,8 +100,8 @@
         }
         .dificultad {
             font-size: 16px;
-            color: #fff;
-            background-color: #ff5733;
+            color: #ffffff00;
+            background-color: #fffb00;
             padding: 8px 12px;
             border-radius: 5px;
         }
@@ -136,28 +134,28 @@
         <div class="seccion">DESAFÍO SEMANAL</div>
         <p style="font-size: 18px;"><strong>¡Crea una ALU de 16 bits y Domina las Operaciones Aritméticas!</strong></p>
         <p>Se busca diseñar una ALU (Unidad Lógica Aritmética) de 16 bits, que sea capaz de realizar las operaciones de suma, resta, multiplicación y división para números enteros y de punto flotante.</p>
-        <p class="dificultad">Dificultad Alta</p>
+        <p class="dificultad" style= "color: #000;"><big>Dificultad Alta</big></p>
         
         <div class="seccion">REQUISITOS</div>
         <div class="desafio">
             <span>Operaciones básicas</span>
-            <span class="dificultad" style="background-color: green;">Suma, Resta, Multiplicación, División</span>
+            <span class="dificultad" style="background-color: rgb(100, 255, 100); color: #000;">Suma, Resta, Multiplicación, División</span>
         </div>
         <div class="desafio">
             <span>Control</span>
-            <span class="dificultad" style="background-color: blue;">Señales de Control</span>
+            <span class="dificultad" style="background-color: rgb(90, 160, 252); color: #000;">Señales de Control</span>
         </div>
         <div class="desafio">
             <span>Excepciones</span>
-            <span class="dificultad" style="background-color: red;">División por Cero, Desbordamientos</span>
+            <span class="dificultad" style="background-color: rgb(255, 109, 109); color: #000;">División por Cero, Desbordamientos</span>
         </div>
         <div class="desafio">
             <span>Modularidad</span>
-            <span class="dificultad" style="background-color: orange;">Diseño por Módulos</span>
+            <span class="dificultad" style="background-color: orange; color: #000;">Diseño por Módulos</span>
         </div>
         <div class="desafio">
             <span>Verificación</span>
-            <span class="dificultad" style="background-color: purple;">Pruebas en ModelSim, Vivado</span>
+            <span class="dificultad" style="background-color: rgb(255, 128, 255); color: #000;">Pruebas en ModelSim, Vivado</span>
         </div>
     </div>
 </body>
