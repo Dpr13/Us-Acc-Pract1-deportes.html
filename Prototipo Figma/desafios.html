@@ -16,6 +16,8 @@
             margin: 0;
         }
         .barra-nav {
+            position: sticky;
+            top: 0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -36,10 +38,20 @@
             background-size: cover;
             background-position: center;
         }
+        .avatar:hover {
+            transform: scale(1.2);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            cursor: pointer;
+        }
         .icono {
             width: 40px;
             height: 40px;
             margin: 20px 0;
+        }
+        .icono:hover {
+            transform: scale(1.5);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+            cursor: pointer;
         }
         .contenedor {
             background-color: #4b1262;
@@ -94,12 +106,12 @@
         .dificultad {
             font-size: 16px;
             color: #fff;
-            background-color: #ff5733;
+            background-color: #941111;
             padding: 8px 12px;
             border-radius: 5px;
         }
         .progreso {
-            background-color: #f39c12;
+            background-color: #faf75e;
             height: 100%;
             border-radius: 10px;
         }
@@ -133,7 +145,7 @@
         <div class="desafio">
             <span>Celsius - Kelvin</span>
             <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/d1962830d006f5b3d940c9fbf646ef027733e533/Prototipo%20Figma/ruby.png?raw=true" alt="Celsius Kelvin" style="width: 10%;">
-            <span class="dificultad" style="background-color: green;">Dificultad Baja</span>
+            <span class="dificultad" style="background-color: rgb(110, 226, 110); color: black;">Dificultad Baja</span>
         </div>
         <div class="desafio">
             <span>Algoritmo A*</span>
@@ -143,7 +155,7 @@
         <div class="desafio">
             <span>Números Felices</span>
             <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/d1962830d006f5b3d940c9fbf646ef027733e533/Prototipo%20Figma/javascript.png?raw=true" alt="Números Felices" style="width: 10%;">
-            <span class="dificultad" style="background-color: orange;">Dificultad Media</span>
+            <span class="dificultad" style="background-color: rgb(252, 255, 104); color: black;">Dificultad Media</span>
         </div>
         <div class="desafio">
             <span>ALU de 16 bits</span>
