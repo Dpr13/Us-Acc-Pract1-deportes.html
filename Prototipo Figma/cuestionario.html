@@ -120,15 +120,37 @@
     .boton:hover {
       background-color: #00aa00;
     }
+    .boton-x {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .boton-x:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+  }
   </style>
 </head>
 <body>
+  <button class="boton-x" onclick="window.history.back()">X</button>
   <div class="contenedor">
     <a href="usuario.html">
       <div class="foto-perfil"></div>
   </a>
-
-
 
     <div class="titulo">Pero primero responde unas preguntas:</div>
 
