@@ -6,14 +6,27 @@
     <title>Hackaton 2024</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            font-size: 22px;
-            background-color: #2e013d;
-            display: flex; /* <- Esto es lo importante */
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2e013d;
+        }
+
+        .layout {
+            display: flex;
+            background-color: #2e013d;
             height: 100vh;
         }
+
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
         .barra-nav {
+            position: sticky;
+            top: 0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -25,6 +38,7 @@
             height: 90vh;
             margin-right: 20px;
         }
+
         .avatar {
             width: 80px;
             height: 80px;
@@ -34,21 +48,25 @@
             background-size: cover;
             background-position: center;
         }
+
         .avatar:hover {
             transform: scale(1.2);
             box-shadow: 0 6px 12px rgba(0,0,0,0.4);
             cursor: pointer;
         }
+
         .icono {
             width: 40px;
             height: 40px;
             margin: 20px 0;
         }
+
         .icono:hover {
             transform: scale(1.5);
             box-shadow: 0 6px 12px rgba(0,0,0,0.4);
             cursor: pointer;
         }
+
         .contenedor {
             background-color: #4b1262;
             padding: 50px;
@@ -57,19 +75,26 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            overflow-y: auto;
-            flex-grow: 1;  /* <- Esto permite que se expanda */
-            height: auto;  /* <- Elimina la altura fija */
+            flex-grow: 1;
+            height: auto;
         }
+
+        .contenedor_legal {
+            padding: 40px;
+            background-color: #2e013d;
+            text-align: center;
+        }
+
         .barra-xp {
             background-color: #f1c40f;
             height: 25px;
             border-radius: 10px;
             width: 100%;
-            min-width: 200px;  /* Asegura que no colapse */
+            min-width: 200px;
             margin: 20px 0;
             position: relative;
         }
+
         .barra-xp span {
             position: absolute;
             left: 50%;
@@ -77,6 +102,7 @@
             font-size: 16px;
             transform: translateX(-50%);
         }
+
         .recompensas, .personalidades-container {
             background-color: #9856c0;
             padding: 20px;
@@ -87,17 +113,19 @@
             font-size: 22px;
             width: 100%;
         }
+
         .imagenes-recompensas {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             margin-top: 10px;
         }
+
         .imagenes-recompensas img {
             width: 100%;
             border-radius: 5px;
         }
-        
+
         .personalidades {
             display: flex;
             justify-content: center;
@@ -108,12 +136,14 @@
             border-radius: 10px;
             width: 100%;
         }
+
         .personalidades img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
         }
+
         .boton-inscribete {
             background-color: orange;
             padding: 10px;
@@ -122,6 +152,7 @@
             font-weight: bold;
             margin-top: 20px;
         }
+
         a.link {
             color: rgb(148, 153, 148);
         }
@@ -136,57 +167,64 @@
     </style>
 </head>
 <body>
-    <div class="barra-nav">
-        <a href="usuario.html">
-            <div class="avatar"></div>
-        </a>
-        <a href="desafios.html">
-            <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-home.png?raw=true" alt="Inicio">
-        </a></a>
-        <a href="semanal.html">
-            <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-calendario.png?raw=true" alt="Calendario">
-        </a></a>
-        <a href="hackaton.html">    
-            <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-medalla.png?raw=true" alt="Logros">
-        </a></a>
-        <a href="comunidad.html">
-            <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-usuarios.png?raw=true" alt="Usuarios">
-        </a></a>
-    </div>
-    <div class="contenedor">
-        <div class="barra-xp">
-            <div class="progreso" style="width: 84%;"></div>
-            <span>42069 XP / 50000 XP</span>
+    <div class="layout">
+        <div class="barra-nav">
+            <a href="usuario.html">
+                <div class="avatar"></div>
+            </a>
+            <a href="desafios.html">
+                <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-home.png?raw=true" alt="Inicio">
+            </a>
+            <a href="semanal.html">
+                <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-calendario.png?raw=true" alt="Calendario">
+            </a>
+            <a href="hackaton.html">    
+                <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-medalla.png?raw=true" alt="Logros">
+            </a>
+            <a href="comunidad.html">
+                <img class="icono" src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/3f32ac8f92683f66830fccff723288a1c8ccd897/Prototipo%20Figma/icono-usuarios.png?raw=true" alt="Usuarios">
+            </a>
         </div>
-        <div class="titulo">HACKATON 2024</div>
-        <p>Únete al torneo más espectacular de todo Benijo participando en el ULL Student Hackaton 2024.</p>
-        <div class="recompensas">Recompensas Únicas</div>
-        <div class="imagenes-recompensas">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/pc-gamer.png?raw=true" alt="PC Gamer" style="width: 60%; ">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/cybertruck.png?raw=true" alt="Cybertruck" style="width: 60%;">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/movil.png?raw=true" alt="Trofeo" style="width: 60%;">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/crucero.png?raw=true" alt="Crucero" style="width: 60%;">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/avion.png?raw=true" alt="Avión Privado" style="width: 60%;">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/dinero.png?raw=true" alt="Dinero" style="width: 60%;">
+
+        <div class="contenido">
+            <div class="contenedor">
+                <div class="barra-xp">
+                    <div class="progreso" style="width: 84%;"></div>
+                    <span>42069 XP / 50000 XP</span>
+                </div>
+                <div class="titulo">HACKATON 2024</div>
+                <p>Únete al torneo más espectacular de todo Benijo participando en el ULL Student Hackaton 2024.</p>
+                <div class="recompensas">Recompensas Únicas</div>
+                <div class="imagenes-recompensas">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/pc-gamer.png?raw=true" alt="PC Gamer" style="width: 60%;">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/cybertruck.png?raw=true" alt="Cybertruck" style="width: 60%;">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/movil.png?raw=true" alt="Trofeo" style="width: 60%;">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/crucero.png?raw=true" alt="Crucero" style="width: 60%;">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/avion.png?raw=true" alt="Avión Privado" style="width: 60%;">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/6d7c90712df277adf38f86881b09a4572346a2e7/Prototipo%20Figma/dinero.png?raw=true" alt="Dinero" style="width: 60%;">
+                </div>
+                <div class="personalidades-container">Conoce algunas personalidades de la ULL</div>
+                <div class="personalidades">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/dbeb467311b816483654fc501a264da39b315448/Prototipo%20Figma/south-park.png?raw=true" alt="Persona 1">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/dbeb467311b816483654fc501a264da39b315448/Prototipo%20Figma/albert.png?raw=true" alt="Persona 2">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/dbeb467311b816483654fc501a264da39b315448/Prototipo%20Figma/elon-musk.png?raw=true" alt="Persona 3">
+                    <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/dbeb467311b816483654fc501a264da39b315448/Prototipo%20Figma/south-park2.png?raw=true" alt="Persona 4">
+                </div>
+                <a href="cuestionario.html" class="boton-inscribete">🔥 INSCRÍBETE <span style="color: blue;">AHORA</span> 🔥</a>
+            </div>
+
+            <div class="contenedor_legal">
+                <footer>
+                    <br><br>
+                    <p style="color: rgb(255, 255, 255)">
+                        &copy; <strong>2023 Universidad de La Laguna. Todos los derechos reservados.</strong>
+                    </p>
+                    <a class="link" href="https://www.ull.es/informacion-sobre-web-institucional/">
+                        Aviso legal y Política de privacidad
+                    </a>
+                </footer>
+            </div>
         </div>
-        <div class="personalidades-container">Conoce algunas personalidades de la ULL</div>
-        <div class="personalidades">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/dbeb467311b816483654fc501a264da39b315448/Prototipo%20Figma/south-park.png?raw=true" alt="Persona 1">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/dbeb467311b816483654fc501a264da39b315448/Prototipo%20Figma/albert.png?raw=true" alt="Persona 2">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/dbeb467311b816483654fc501a264da39b315448/Prototipo%20Figma/elon-musk.png?raw=true" alt="Persona 3">
-            <img src="https://github.com/Dpr13/Us-Acc-Pract1-deportes.html/blob/dbeb467311b816483654fc501a264da39b315448/Prototipo%20Figma/south-park2.png?raw=true" alt="Persona 4">
-        </div>
-        <a href="cuestionario.html" class="boton-inscribete">🔥 INSCRÍBETE <span style="color: blue;">AHORA</span> 🔥</a>
-        <br>
-        <!-- FOOTER -->
-        <footer>
-            <br>
-            <br>
-            <p style="color: rgb(255, 255, 255)">&copy; <strong>2023 Universidad de La Laguna. Todos los derechos reservados.</strong></p>
-            <a class="link" href="https://www.ull.es/informacion-sobre-web-institucional/">Aviso legal y Política de privacidad</a>
-        </footer>
     </div>
 </body>
 </html>
-
-
